@@ -1,0 +1,116 @@
+.field-jumplist {
+  display: none;
+}
+
+#jumplist {
+  background: #000;
+  padding: 0 1em 1em 1em;
+  position: absolute;
+  right: 4em;
+  top: 0;
+  line-height: 0;
+}
+
+#jumplist.with-languages {
+  right: 8.5em;
+}
+
+#jumplist > i {
+  color: #fff;
+  margin: 0;
+  width: 4em;
+  height: 3em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 3em;
+  cursor: pointer;
+}
+
+#jumplist .menus_wrapper {
+  display: none;
+  background-color: #000;
+  margin-top: 3em;
+  width: auto;
+  float: left;
+}
+
+#jumplist:hover .menus_wrapper {
+  display: block;
+}
+
+#jumplist li a.active {
+  cursor: default;
+}
+
+#jumplist li.with_childs a.active {
+  cursor: pointer;
+}
+
+#jumplist li a.home {
+  background: #333;
+}
+
+#jumplist > i:hover,
+#jumplist li a.home:hover,
+#jumplist li a:hover,
+#jumplist li a.active,
+#jumplist li a.active.home,
+#jumplist .menu ol li a:hover {
+  background: #8dae28;
+}
+
+#jumplist .menu {
+  line-height: 125%;
+  text-align: left;
+  white-space: nowrap;
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+#jumplist .menu:last-of-type {
+  margin: 0;
+}
+
+#jumplist .menu li {
+  list-style: none;
+  position: relative;
+}
+
+#jumplist .menu li a {
+  color: #fff;
+  display: block;
+  padding: .25em 1em;
+}
+
+/* Submenu's */
+
+#jumplist .menu li i {
+  font-size: 75%;
+  margin: 0 0 0 .5em;
+  opacity: .5;
+}
+
+#jumplist .menu li .submenu {
+  display: none;
+  position: absolute;
+  background: #555;
+  z-index: 1;
+  top: 1.75em;
+  right: 0;
+  z-index: 1;
+}
+
+#jumplist .menu li.with_childs div {
+  margin: -4px 0 0 0;
+  padding: 4px 0 0 0;
+}
+
+#jumplist .menu li.with_childs div:hover .submenu {
+  display: block;
+}
+
+#jumplist .menu .submenu li:last-of-type a {
+  padding-bottom: .5em;
+}
